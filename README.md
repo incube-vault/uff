@@ -10,7 +10,7 @@ Your data never leaves your browser.
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Deploy](https://img.shields.io/badge/deploy-Vercel-black.svg)](https://usformfiller.vercel.app)
 
-[Live App](https://usformfiller.vercel.app) &middot; [Blog](https://usformfiller.vercel.app/blog) &middot; [Report Bug](https://github.com/incube-vault/uff/issues)
+[Live App](https://usformfiller.vercel.app) &middot; [Blog](https://usformfiller.vercel.app/blog) &middot; [Report Bug](https://github.com/yerlikayao/uff/issues)
 
 ![UFF — IRS Form Filling](docs/pick-form.gif)
 
@@ -62,7 +62,7 @@ UFF gives you a clean, guided form for each IRS document. Fill the fields, hit d
 
 ```bash
 # Clone
-git clone https://github.com/incube-vault/uff.git
+git clone https://github.com/yerlikayao/uff.git
 cd uff
 
 # If using mise (recommended)
@@ -85,14 +85,14 @@ Open [http://localhost:3000](http://localhost:3000) — the frontend proxies `/a
 ### One-liner (if you just want to try it)
 
 ```bash
-git clone https://github.com/incube-vault/uff.git && cd uff && npm i && npm run dev
+git clone https://github.com/yerlikayao/uff.git && cd uff && npm i && npm run dev
 ```
 
 > The frontend works standalone for browsing forms. The backend is needed for PDF generation.
 
 ## Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/incube-vault/uff)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yerlikayao/uff)
 
 The project deploys to Vercel out of the box — Next.js frontend + Python API serverless functions.
 
@@ -117,7 +117,7 @@ Contributions are welcome. Here are some ways to help:
 
 - **Add a new form** — Define it in `src/lib/forms.ts`, add the PDF template to `public/pdfs/`
 - **Write a blog post** — Add it to `src/lib/blog-posts.ts`
-- **Fix a bug** — Check [open issues](https://github.com/incube-vault/uff/issues)
+- **Fix a bug** — Check [open issues](https://github.com/yerlikayao/uff/issues)
 - **Improve UI** — The design follows a [37signals](https://hey.com)-inspired style
 
 ```bash
