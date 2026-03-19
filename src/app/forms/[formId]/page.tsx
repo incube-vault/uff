@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { forms } from "@/lib/forms";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
@@ -6,6 +7,20 @@ import FormFiller from "@/components/FormFiller";
 
 export function generateStaticParams() {
   return forms.map((form) => ({ formId: form.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ formId: string }>;
+}): Promise<Metadata> {
+  const { formId } = await params;
+  const form = forms.find((f) => f.id === formId);
+  if (!form) return { title: "Not Found" };
+  return {
+    title: `Fill ${form.name} — ${form.fullName}`,
+    description: `${form.description} Fill out ${form.name} online with guided fields. Free, no signup required.`,
+  };
 }
 
 export default async function FormPage({

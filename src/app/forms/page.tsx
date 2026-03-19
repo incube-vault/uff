@@ -1,7 +1,14 @@
+import { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { forms, formCategories } from "@/lib/forms";
+
+export const metadata: Metadata = {
+  title: "All IRS Forms",
+  description:
+    "Browse and fill 13 IRS tax forms online. SS-4, Form 8832, Form 1120, and more. Free, guided, browser-based form filling.",
+};
 
 const categoryColors: Record<string, string> = {
   formation: "bg-pop-blue text-white",
